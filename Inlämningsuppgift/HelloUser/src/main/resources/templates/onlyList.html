@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Medlemmar</h1>
+    <ol>
+        <lith.id="${member.id}" th:each="member : ${nameList}">
+            <h4>förnamn:</h4> <span th:text="${member.fname}"></span>
+            <h4>efternamn:</h4><span th:text="${member.lname}"></span>
+            <h4>e-post:</h4><span th:text="${member.email}"></span>
+            <br/>
+            <br/>
+        </li>
+    </ol>
+    <a th:href=@{/}><button>Tillbaka</button></a>
+</body>
+</html>

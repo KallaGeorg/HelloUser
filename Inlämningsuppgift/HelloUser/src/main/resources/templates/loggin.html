@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+    <script src="scriptLoggIn.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logg in</title>
+</head>
+<body>
+    <h3>Logg in</h3>
+    <h5>Användernamn</h5>
+    <input id="loggInName" type="text">
+    <a  th:href=@{/}> <button id="loggInBtn1">check</button></a>
+    <br/>
+    <h5>Lösenord</h5>
+    <input id="loggInPassword" type="text">
+    <a  th:href=@{/}> <button id="loggInBtn2">check</button></a>
+    
+   <br/>
+    <br/>
+    
+    <a th:href=@{/onlyList}><button> Visa Medlemmar</button></a><br/><br/>
+    
+    
+</body>
+</html>

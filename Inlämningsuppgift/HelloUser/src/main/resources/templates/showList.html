@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Visa och radera medlemmar</h1>
+    <div>
+    <ol>
+        <li th.id="${member.id}" th:each="member : ${nameList}">
+            <h4>förnamn:</h4> <span th:text="${member.fname}"></span>
+            <h4>efternamn:</h4><span th:text="${member.lname}"></span>
+            <h4>e-post:</h4><span th:text="${member.email}"></span>
+            <br/>
+            <br/>
+            <a th:href=@{/remove-member/{memberID}(memberID=${member.id})}><button>radera</button></a>
+        </li>
+        
+    </ol>
+    </div>
+    
+    
+
+   <br/>
+   <a th:href=@{admin}>Adminsida</a>
+</body>
+</html>
