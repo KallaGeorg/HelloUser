@@ -27,9 +27,7 @@ public class MedlemController {
  @PostMapping("/new-member")
     public String newMemberInfo(@RequestParam("fname")String fname, @RequestParam("lname")String lname, @RequestParam("email")String email){
           medlemmar.add(new Medlem(fname,lname,email,medlemmar.size()+1));
-         System.out.println(fname);
-         System.out.println(lname);
-         System.out.println(email);
+       
           return"redirect:/createMember";
     }
             
