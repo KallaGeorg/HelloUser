@@ -1,17 +1,13 @@
 let loggInName= document.getElementById("loggInName");
 let loggInPassword= document.getElementById("loggInPassword");
-let loggInBtn1 = document.getElementById("loggInBtn1");
-let loggInBtn2 = document.getElementById("loggInBtn2");
+let loggInBtn = document.getElementById("loggInBtn");
 
 
 let admin = false;
-    loggInBtn1.addEventListener("click", ()=>{
+    loggInBtn.addEventListener("click", ()=>{
         localStorage.setItem("key1", loggInName.value.toLowerCase())
-    });
-    loggInBtn2.addEventListener("click", ()=>{
         localStorage.setItem("key2",loggInPassword.value.toLowerCase())
     });
-    
    
     if(localStorage.getItem("key1") == "admin" && localStorage.getItem("key2") == "admin"){
         admin = true;
@@ -26,7 +22,7 @@ let admin = false;
         admin = false;
         
     }
-   // refreshBtn.addEventListener("click", () =>{ });
+ 
     
    
     
@@ -34,9 +30,6 @@ let admin = false;
     
 
 
-//else{
- //   admin = false;
-//}
 
   
 
