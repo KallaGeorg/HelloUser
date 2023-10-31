@@ -1,0 +1,25 @@
+body{
+    background-color: lightblue;
+}
+#onlyListBtn{
+    background-color: aquamarine;
+    width: 150px;
+    height: 5px,  
+    
+}
+#onlyListHead{
+    color: #1b0f52;
+    
+}
+#onlyListHello{
+    color:#7861df;
+}
+#onlyListList{
+    color:rgb(18, 15, 155)
+}
+#buttonText{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#wholeContent{
+    padding-inline-start: 400px;
+}

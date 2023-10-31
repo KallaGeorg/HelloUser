@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" href="styleAdminSides.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <div id="createMemberContent">
     <h1>Visa och radera medlemmar</h1>
-    <div>
-    <ol>
+    
+    <ol id="adminRed">
         <li th.id="${member.id}" th:each="member : ${nameList}">
             <h4>förnamn:</h4> <span th:text="${member.fname}"></span>
             <h4>efternamn:</h4><span th:text="${member.lname}"></span>
@@ -19,11 +21,9 @@
         </li>
         
     </ol>
+    <br/>
+    <a th:href=@{admin}>Adminsida</a>
     </div>
     
-    
-
-   <br/>
-   <a th:href=@{admin}>Adminsida</a>
 </body>
 </html>

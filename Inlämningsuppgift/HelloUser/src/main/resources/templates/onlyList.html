@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleOnlyList.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Medlemmar</h1>
-    <ol>
-        <lith.id="${member.id}" th:each="member : ${nameList}">
-            <h4>förnamn:</h4> <span th:text="${member.fname}"></span>
-            <h4>efternamn:</h4><span th:text="${member.lname}"></span>
-            <h4>e-post:</h4><span th:text="${member.email}"></span>
-            <br/>
-            <br/>
-        </li>
-    </ol>
-    <a th:href=@{/}><button>Tillbaka</button></a>
+    <div id="wholeContent">
+        <h1 id="onlyListHello">H e l l o  U s e r</h1>
+        <h1 id="onlyListHead">Medlemmar</h1>
+        <ol id="onlyListList">
+            <li th:id="${member.id}" th:each="member : ${nameList}">
+                <h4>förnamn:</h4> <span th:text="${member.fname}"></span>
+                <h4>efternamn:</h4><span th:text="${member.lname}"></span>
+                <h4>e-post:</h4><span th:text="${member.email}"></span>
+                <br/>
+                <br/>
+            </li>
+        </ol>
+        <a th:href=@{/}><button id="onlyListBtn"><h4 id="buttonText">Tillbaka till loggin</h4></button></a>
+    </div>
+
 </body>
 </html>

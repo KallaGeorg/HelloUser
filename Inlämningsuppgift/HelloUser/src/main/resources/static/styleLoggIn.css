@@ -1,0 +1,21 @@
+body{
+    background-color: aquamarine;
+}
+#loggInVisaBtn{
+    color: rgb(113, 9, 231);
+    background-color: rgb(233, 171, 219);
+    height: 55px;
+    width: 250px;
+}
+#loggInHead{
+    color: rgb(48, 37, 197);
+}
+#Laughing{
+    width: 200px;
+    height:200px;
+}
+#loggInContent{
+    padding-inline-start: 400px;
+
+}
+

@@ -1,0 +1,12 @@
+body{
+    background-color: lightgray;
+}
+#adminRed{
+    color: rgb(230, 25, 66);
+}
+#createMemberContent{
+    padding-inline-start: 400px;
+}
+#adminContent{
+    padding-inline-start: 450px;
+}

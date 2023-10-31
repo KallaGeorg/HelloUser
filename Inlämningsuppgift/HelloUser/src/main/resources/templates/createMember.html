@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" href="styleAdminSides.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Members</title>
 </head>
 <body>
-    <h1>Lägg till medlemmar</h1>
-    <ol>
-        <form method="post" th:action="@{/new-member}" th:object=${newMember}>
-            <h5>Skriv ditt förnamn</h5>
-            <input type="text" th:field="*{fname}"><br/>
-            <h5>Skriv ditt efternamn</h5>
-            <input type="text" th:field="*{lname}">
-            <h5>Skriv ditt e-post adress</h5>
-            <input type="text" th:field="*{email}">
-            <input type="submit">
-    
-        </form>
-       
-        <li th:each="member : ${members}">
-            <span th:text="${member.fname}"></span>
-            
-            
-        </li>
-    </ol>
-    <br/>
-    <a th:href=@{admin}>Adminsida</a>
+    <div id="createMemberContent">
+        <h1>Lägg till medlemmar</h1>
+        <ol>
+            <form method="post" th:action="@{/new-member}" th:object=${newMember}>
+                <h5 id="adminRed">Ny medlem förnamn</h5>
+                <input type="text" th:field="*{fname}"><br/>
+                <h5 id="adminRed">Ny medlem efternamn</h5>
+                <input type="text" th:field="*{lname}">
+                <h5 id="adminRed">Ny medlem e-post adress</h5>
+                <input type="text" th:field="*{email}">
+                <input type="submit">
+        
+            </form>
+           
+            <li th:each="member : ${members}">
+                <span th:text="${member.fname}"></span>
+                
+                
+            </li>
+        </ol>
+        <br/>
+        <a th:href=@{admin}>Adminsida</a>
+
+    </div>
+   
 
    
     

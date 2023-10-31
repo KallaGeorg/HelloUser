@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleAdminSides.css">
     <title>Admin</title>
 </head>
 <body>
-    <h1>Adminsida</h1>
-        <a th:href=@{createMember}><h3>Lägg till medlemmar</h3></a>
-        <a th:href=@{showList}><h3>Visa och radera medlemmar</h3></a>
-        <a th:href=@{/}><h3>Logg In</h3></a>
+    <div id="adminContent">
+        <h1>Adminsida</h1>
+        <a th:href=@{createMember}><h3 id="adminRed">Lägg till medlemmar</h3></a>
+        <a th:href=@{showList}><h3 id="adminRed">Visa och radera medlemmar</h3></a>
+        <a th:href=@{/}><h3 id="adminRed">Logg In</h3></a>
+    </div>
+    
+        
       
        
        
