@@ -11,9 +11,14 @@ let admin = false;
    
     if(localStorage.getItem("key1") == "admin" && localStorage.getItem("key2") == "admin"){
         admin = true;
+        
         let link = document.createElement("a");
+        
         link.innerText = "Adminsida";
+        link.id = "adminLink";
         link.href="/admin";
+        link.style.color="red";
+        
         document.body.appendChild(link);
         
         

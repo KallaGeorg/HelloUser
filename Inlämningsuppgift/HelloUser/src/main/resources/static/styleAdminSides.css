@@ -10,3 +10,13 @@ body{
 #adminContent{
     padding-inline-start: 450px;
 }
+#adminSideLink{
+    margin: 140px;
+    font-size: 20px;
+}
+#adminOtherLinks{
+    margin:-480px;
+    color: rgb(223, 42, 78);
+    
+    
+}
