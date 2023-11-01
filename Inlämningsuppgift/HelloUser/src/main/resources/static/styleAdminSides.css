@@ -18,5 +18,9 @@ body{
     margin:-480px;
     color: rgb(223, 42, 78);
     
-    
+}
+#loggOutBtn{
+    height: 0px 40px;
+    width: 70px;
+    margin:0px 45px;
 }

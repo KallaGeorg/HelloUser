@@ -20,7 +20,6 @@ public class MedlemController {
    
  @GetMapping("/createMember")
  public String getMember(Model model, String lname, String fname, String email){
-    //model.addAttribute("members", medlemmar );
     model.addAttribute("newMember", new Medlem("","","", 0));
      return "createMember";
  }

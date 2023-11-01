@@ -1,6 +1,7 @@
 let loggInName= document.getElementById("loggInName");
 let loggInPassword= document.getElementById("loggInPassword");
 let loggInBtn = document.getElementById("loggInBtn");
+let loggOutBtn = document.getElementById("loggOutBtn");
 
 
 let admin = false;
@@ -11,22 +12,14 @@ let admin = false;
    
     if(localStorage.getItem("key1") == "admin" && localStorage.getItem("key2") == "admin"){
         admin = true;
-        
-        let link = document.createElement("a");
-        
-        link.innerText = "Adminsida";
-        link.id = "adminLink";
-        link.href="/admin";
-        link.style.color="red";
-        
-        document.body.appendChild(link);
-        
-        
+        window.location.href="/admin";
+     
     }
     else{
         admin = false;
         
     }
+ 
  
     
    
