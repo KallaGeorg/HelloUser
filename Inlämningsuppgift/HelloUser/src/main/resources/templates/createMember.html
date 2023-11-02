@@ -2,13 +2,13 @@
 <html lang="en" xmlns="http://www.thymeleaf.org">
 <head>
     <link rel="stylesheet" href="styleAdminSides.css">
-    <script src="test2.js" defer></script>
+    <script src="scriptAdmin.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Members</title>
 </head>
 <body>
-    <div id="createMemberContent">
+    <div id="adminContent">
         <h1>Lägg till medlemmar</h1>
         <ol>
             <form method="post" th:action="@{/new-member}" th:object=${newMember}>

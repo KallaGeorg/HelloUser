@@ -13,6 +13,9 @@ if(loggInName.value == "admin" && loggInPassword.value == "admin"){
 }
 loggInName.value="";
 loggInPassword.value="";
+window.location.href="admin";
+
+});
 if(localStorage.getItem("key1")=="admin" && localStorage.getItem("key2")== "admin"){
     admin = true;
     window.location.href="admin";
@@ -23,8 +26,6 @@ if(localStorage.getItem("key1")=="admin" && localStorage.getItem("key2")== "admi
 else{
     admin = false;
 }
-
-});
 
 
    
