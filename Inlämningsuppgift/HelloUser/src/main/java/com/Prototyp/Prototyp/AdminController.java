@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AdminController {
    
-    @GetMapping("/admin")
+    @GetMapping("/admin2")
     public String getAdmin(){
-        return("admin");
+        return("admin2");
     }
   
 

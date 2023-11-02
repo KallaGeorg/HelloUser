@@ -1,8 +1,10 @@
-let knapp = false;
+//let knapp = false;
 loggOutBtn.addEventListener("click", ()=>{
-localStorage.setItem("key1","out")
-localStorage.setItem("key2","out")
+localStorage.setItem("key1","0")
+localStorage.setItem("key2","0")
+window.location.href="/";
 
 });
+
 
   
