@@ -2,7 +2,7 @@ let loggInName= document.getElementById("loggInName");
 let loggInPassword= document.getElementById("loggInPassword");
 let loggInBtn = document.getElementById("loggInBtn");
 let loggOutBtn = document.getElementById("loggOutBtn");
-//let adminContent = document.getElementById("adminContent");
+
 
 let admin = false;
 loggInBtn.addEventListener("click", ()=>{
@@ -25,12 +25,7 @@ else{
 }
 
 });
-//const test = document.createElement("h1");
-//test.textContent="Test";
-//document.body.appendChild(test);
 
-
-    //window.location.href="/";
 
    
     
@@ -40,13 +35,9 @@ else{
         
     
     
-   // if(admin){
+ 
        
-       
-        //window.location.replace("/");
-
-   // }
-        
+   
     
     
        
