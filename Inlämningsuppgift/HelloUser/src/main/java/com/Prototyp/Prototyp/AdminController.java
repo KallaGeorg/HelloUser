@@ -14,6 +14,11 @@ public class AdminController {
     public String getAdmin(){
         return("admin");
     }
+    @GetMapping("/notSigned")
+    public String getNotSigned(){
+        return("notSigned");
+    }
+ 
   
 
     
