@@ -4,6 +4,7 @@ let loggInBtn = document.getElementById("loggInBtn");
 let loggOutBtn = document.getElementById("loggOutBtn");
 
 
+
 let admin = false;
 loggInBtn.addEventListener("click", ()=>{
 if(loggInName.value == "admin" && loggInPassword.value == "admin"){
@@ -11,6 +12,8 @@ if(loggInName.value == "admin" && loggInPassword.value == "admin"){
     localStorage.setItem("key1",loggInName.value)
     localStorage.setItem("key2",loggInPassword.value)
 }
+
+
 loggInName.value="";
 loggInPassword.value="";
 window.location.href="admin";
